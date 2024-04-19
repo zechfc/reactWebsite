@@ -5,7 +5,7 @@ const Animal = () => {
   <section className = {Animal.className}>
     <h3>(animal.name)</h3>
     <p>Pandas are great</p>
-    <img src={animal.image} alt={Animal.name} />
+    <img src={Animal.image} alt={Animal.name} />
 
   </section>
   );
