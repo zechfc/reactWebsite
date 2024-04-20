@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './Header';
 import Footer from './Footer';
-import Animal from './Animal';
+import Content from './Content';
 
 
 const App = () => {
@@ -9,11 +9,11 @@ const App = () => {
     <div>
     <Header />
 
-    <Animal name="Panda" className="panda" images=""/>
+    <Content />
     
-    <Animal name="Tiger" className="tiger" images=""/>
-
     <Footer />
+    <script src="script.js"></script>
+
     </div>
     
 
