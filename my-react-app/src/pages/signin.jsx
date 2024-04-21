@@ -26,7 +26,6 @@ const Signin = () => {
                 
             </section>
 
-          <Footer />
 
 
     </div>
