@@ -1,14 +1,13 @@
-import LogoDawn from '../components/dawnlogo';
 
-const dawnDrinks = (menuItem) => {
+const dawnFood = (menuItem) => {
+    if (menuItem.menu == "dawn") {
 
-  if (menuItem.menu == "dawn") {
-    if(menuItem.type == "Drink" ){
+    if(menuItem.type == "Food"){
       return (    
         <section>
-      <table className="two top drinks">
+      <table className="top food">
         <tr>
-          <th>Drink of The Week</th>
+          <th>Food of The Week</th>
           <th>{menuItem.name}</th>
           </tr>
           <tr>
@@ -22,10 +21,10 @@ const dawnDrinks = (menuItem) => {
                 <p>{menuItem.description}</p>
                 <h3>Ingredients</h3>
                 <ul>
-                  <li>{menuItem.ingredients[0]}</li>
-                  <li>{menuItem.ingredients[1]}</li>
-                  <li>{menuItem.ingredients[2]}</li>
-                  <li>{menuItem.ingredients[3]}</li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
                   </ul>
                 <h3>Price</h3>
                   <div className="bullets">
@@ -36,18 +35,13 @@ const dawnDrinks = (menuItem) => {
                 </td>
             </tr>
           </table>
-
-      
-                             </section>
-
-                
-    )}
-
-    <LogoDawn />
-
+   
+               
+                  </section>
+    )} 
    
 
   }
 };
 
-export default dawnDrinks;
+export default dawnFood;

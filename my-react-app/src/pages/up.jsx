@@ -4,8 +4,10 @@ import MenuItem from "../components/dawnitems";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import DayForm from '../components/dayForm';
+import DawnFood from '../components/dawnFood';
+import DawnDrink from '../components/dawnDrinks';
+import LogoDawn from '../components/dawnlogo';
 
-import DawnDrinks from '../components/dawnDrinks';
 
 
 const Dawn = () => {
@@ -32,8 +34,10 @@ const Dawn = () => {
           <DayForm />
           <div id="dawnmenu" class="columns Menu">
 
-      {menuItems.map((menuItem) => (
-        <DawnDrinks
+          <div className="two">
+
+          {menuItems.map((menuItem) => (
+        <DawnDrink
           key={menuItem.menuId}
           name={menuItem.name}
           type={menuItem.type}
@@ -49,6 +53,35 @@ const Dawn = () => {
         />
 
       ))}
+        </div>
+
+      <div className="columns">
+      <LogoDawn />
+
+      </div>
+      <div className="two">
+
+      {menuItems.map((menuItem) => (
+        <DawnFood
+          key={menuItem.menuId}
+          name={menuItem.name}
+          type={menuItem.type}
+          menu={menuItem.menu}
+          feature={menuItem.feature}
+          main_image={menuItem.img}
+          description={menuItem.description}
+          prices={menuItem.prices}
+          amt={menuItem.amt}
+          ingredients={menuItem.ingredients}
+
+
+        />
+
+      ))}
+      </div>
+
+
+
               </div>
               </div>
 
