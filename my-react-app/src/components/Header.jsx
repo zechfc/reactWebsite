@@ -10,18 +10,18 @@ const Header = () => {
             </div>
 
                 <section id="signin" >
-                <a href="/"> 
+                <Link to="/signin">
                 <img alt="signin" src="https://upload.wikimedia.org/wikipedia/commons/1/1f/PICOL_icon_Login.svg"></img>
                 <p>Sign In</p>                
-            </a>
+            </Link>
 
             </section >
 
             <section id="cart-btn" >
-                <a href="cart.html" >
+            <Link to="/cart">
                 <img alt="cart" src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Antu_amarok_cart_view.svg"></img>
                 <p>cart</p>
-            </a>
+            </Link>
             </section>
         </div>
 

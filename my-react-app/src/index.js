@@ -8,6 +8,8 @@ import Up from "./pages/up";
 import Down from "./pages/down";
 import RoomRental from "./pages/roomRental";
 import About from "./pages/about";
+import Signin from "./pages/signin";
+import Cart from "./pages/cart";
 
 
 export default function App() {
@@ -21,6 +23,9 @@ export default function App() {
           <Route path="up" element={<Up />} />
           <Route path="about" element={<About />} />
           <Route path="roomRental" element={<RoomRental />} />
+          <Route path="signin" element={<Signin />} />
+          <Route path="cart" element={<Cart />} />
+
 
       </Routes>
     </BrowserRouter>
