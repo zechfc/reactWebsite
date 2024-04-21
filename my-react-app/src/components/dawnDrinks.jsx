@@ -6,7 +6,7 @@ const dawnDrinks = (menuItem) => {
     if(menuItem.type == "Drink" && menuItem.feature == true){
       return (    
         
-      <table class="two top drinks">
+      <table className="two top drinks">
         <tr>
           <th>Drink of The Week</th>
           <th>{menuItem.name}</th>
@@ -16,19 +16,19 @@ const dawnDrinks = (menuItem) => {
         
               <img id="test" src={menuItem.main_image}></img>
                 <p></p>
-                <button class="order">Order</button>
+                <button className="order">Order</button>
               </td>
               <td>
                 <p>{menuItem.description}</p>
                 <h3>Ingredients</h3>
                 <ul>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
+                  <li>{menuItem.ingredients[0]}</li>
+                  <li>{menuItem.ingredients[1]}</li>
+                  <li>{menuItem.ingredients[2]}</li>
+                  <li>{menuItem.ingredients[3]}</li>
                   </ul>
                 <h3>Price</h3>
-                  <div class="bullets">
+                  <div className="bullets">
                     <p><strong></strong></p>
                     <p><strong></strong> </p>
                     <p><strong></strong></p>
@@ -41,7 +41,7 @@ const dawnDrinks = (menuItem) => {
     if(menuItem.type == "Drink" && menuItem.feature == false){
       return (    
       
-          <table class="two top drinks">
+          <table className="two top drinks">
             <tr>
               <th>Beverage Menu</th>
               <th>{menuItem.name}</th>
@@ -50,7 +50,7 @@ const dawnDrinks = (menuItem) => {
                 <td>
                   <img src={menuItem.main_image}></img>
                     <p></p>
-                    <button class="order">Order</button>
+                    <button className="order">Order</button>
                 </td>
                 <td>
                   <p>{menuItem.description}</p>
@@ -62,7 +62,7 @@ const dawnDrinks = (menuItem) => {
                     <li> </li>
                   </ul>
                   <h3>Price</h3>
-                  <div class="bullets">
+                  <div className="bullets">
                     <p>
                       <strong>Large</strong> -  5.00</p>
                       <p><strong>Medium</strong> -  3.50</p>
@@ -80,7 +80,7 @@ const dawnDrinks = (menuItem) => {
     if(menuItem.type == "Food" && menuItem.feature == true){
       return (    
         <section>
-      <table class="top food">
+      <table className="top food">
         <tr>
           <th>Food of The Week</th>
           <th>{menuItem.name}</th>
@@ -90,7 +90,7 @@ const dawnDrinks = (menuItem) => {
         
               <img id="test" src={menuItem.main_image}></img>
                 <p></p>
-                <button class="order">Order</button>
+                <button className="order">Order</button>
               </td>
               <td>
                 <p>{menuItem.description}</p>
@@ -102,7 +102,7 @@ const dawnDrinks = (menuItem) => {
                   <li></li>
                   </ul>
                 <h3>Price</h3>
-                  <div class="bullets">
+                  <div className="bullets">
                     <p><strong></strong></p>
                     <p><strong></strong> </p>
                     <p><strong></strong></p>
@@ -117,7 +117,7 @@ const dawnDrinks = (menuItem) => {
       return (    
         <section>
       
-          <table class="top food">
+          <table className="top food">
             <tr>
               <th>Food Menu</th>
               <th>{menuItem.name}</th>
@@ -126,7 +126,7 @@ const dawnDrinks = (menuItem) => {
                 <td>
                   <img src={menuItem.main_image}></img>
                     <p></p>
-                    <button class="order">Order</button>
+                    <button className="order">Order</button>
                 </td>
                 <td>
                   <p>{menuItem.description}</p>
@@ -138,7 +138,7 @@ const dawnDrinks = (menuItem) => {
                     <li> </li>
                   </ul>
                   <h3>Price</h3>
-                  <div class="bullets">
+                  <div className="bullets">
                     <p>
                       <strong>Large</strong> -  5.00</p>
                       <p><strong>Medium</strong> -  3.50</p>
