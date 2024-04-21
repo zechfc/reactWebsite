@@ -1,5 +1,6 @@
 
 const MenuItem = (menuItem) => {
+  const imageSrc = menuItem.main_image;
   return (
     <section >
      <button id="side-panel-button" class="side-panel-toggle" type="button"> Recommend A Nite Menu Item</button>
@@ -75,9 +76,8 @@ const MenuItem = (menuItem) => {
                   </div>
                   </div>
                   <div id="duskmenu" class="columns Menu">
-      
      
-      </div>
+                  </div>
 
                  
 

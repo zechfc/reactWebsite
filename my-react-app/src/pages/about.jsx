@@ -1,7 +1,51 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import React from "react";
 
 const About = () => {
+
+    const onSubmit = async (event) => {
+      event.preventDefault();
+      console.log("test");
+  
+      const result = document.getElementById("result");
+      let response = await getEmailResult();
+  
+      if(response.status == 200){
+          result.innerHTML = "Email successfully sent";
+      } else {
+          result.innerHTML = "Sorry, your email was not sent";
+      }
+      }
+  
+  
+    const getEmailResult = async() => {
+      const form = document.getElementById("contact-form");
+      const formData = new FormData(form);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+      const result = document.getElementById("result");
+      result.innerHTML = "Please wait....";
+  
+      try {
+          const response = await fetch("https://api.web3forms.com/submit", {
+              method: "POST",
+              headers:{
+                  "Content-Type":"application/json",
+                  Accept:"application/json"
+              },
+              body:json
+          });
+  
+          return response;
+      } catch(error){
+          console.log(error);
+          result.innerHTML = "Sorry, your email couldn't be sent";
+      }
+  };
+  
+
+
   return (
     
   <section >
@@ -28,10 +72,11 @@ const About = () => {
                 </p>
             </section>
         </div>
+
         <div class="columns info-section">
                     <section class="half center-form">
                         <h3>Contact us</h3>
-                        <form
+                        <form onSubmit={onSubmit}
                         id="contact-form"
                         action="https://api.web3forms.com/submit"
                         method="POST"
@@ -73,6 +118,7 @@ const About = () => {
                         <input type="hidden" name="from_name" value="My Website" />
               
                         <p>
+                          
                           <button type="submit">Submit Form</button>
                         </p>
               

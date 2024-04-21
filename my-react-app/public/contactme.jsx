@@ -1,4 +1,7 @@
-const showEmailResult = async(e) => {
+import React from "react";
+
+function App() {
+  const onSubmit = async (event) => {
     e.preventDefault();
     console.log("test");
 
@@ -10,10 +13,10 @@ const showEmailResult = async(e) => {
     } else {
         result.innerHTML = "Sorry, your email was not sent";
     }
+    }
+  };
 
-};
-
-const getEmailResult = async() => {
+  const getEmailResult = async() => {
     const form = document.getElementById("contact-form");
     const formData = new FormData(form);
     const object = Object.fromEntries(formData);
@@ -38,4 +41,14 @@ const getEmailResult = async() => {
     }
 };
 
-document.getElementById("contact-form").onsubmit = showEmailResult;
+  return (
+      <form onSubmit={onSubmit}>
+        <input type="text" name="name"/>
+        <input type="email" name="email"/>
+        <textarea name="message"></textarea>
+        <button type="submit">Submit Form</button>
+      </form>
+  );
+
+
+export default App;
