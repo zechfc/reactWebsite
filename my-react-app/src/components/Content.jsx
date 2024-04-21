@@ -1,4 +1,3 @@
-import '../Content.css';
 
 const Content = () => {
   return (
@@ -56,27 +55,7 @@ const Content = () => {
         </div>
         
     </div>
-    <div  id="signin-pop" class="popup hide" >
-            <div id="login" class="form">
-                <h2>log in</h2>
-                <div class="form-elements"></div>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" required id="email" placeholder="Enter email"></input>
-                <div class="form-elements"></div>
-                    <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Enter password"></input>
-                <div class="form-elements">
-                    <button> Sign in</button>
 
-                </div>
-            </div>
-        </div>
-        <section class="center">
-
-<p>&copy; By Zechariah</p>
-
-    <button id="btn-attributions">Show attributions</button>    
-</section>
   </section>
   );
 }

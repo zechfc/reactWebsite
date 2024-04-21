@@ -1,3 +1,16 @@
+
+const putmedown = () => {
+    console.log("good");
+    window.location.href="up.jsx";
+    };
+    
+    const pickmeup = () => {
+        console.log("good");
+    
+        window.location.href="down.jsx";
+      
+    };
+
 const showHideNav = () => {
     const root = document.querySelector(":root");
         //root.style.setProperty("--ball-color", color); changes all the circles color
@@ -163,6 +176,7 @@ const getRadioValue = (radioName) => {
 
 //Side panel credit ->https://codepen.io/dcode-software/pen/OJxEWWz
 document.querySelector(".side-panel-toggle").addEventListener("click", () => {
+    console.log("test");
     document.querySelector(".wrapper").classList.toggle("side-panel-open");
     if(document.getElementById("side-panel-button").innerHTML=="Close Panel")
     {
@@ -175,17 +189,6 @@ document.querySelector(".side-panel-toggle").addEventListener("click", () => {
 
   });
 
-  const putmedown = () => {
-    console.log("good");
-    <Link to="/down"></Link>;
-    };
-    
-    const pickmeup = () => {
-        console.log("good");
-    
-    <Link to="/up"></Link>  
-      
-    };
 
 document.getElementById("signin").onclick = signin;
 //document.getElementById("cart-btn").onclick = cart;

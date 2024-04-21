@@ -14,6 +14,8 @@ const Down = () => {
         "https://zechfc.github.io/csce242/projects/part6%20org/menu.json"
         
       );
+      console.log("made it");
+
       setMenuItems(response.data);
     })();
   }, []);

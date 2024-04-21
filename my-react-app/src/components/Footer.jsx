@@ -1,8 +1,14 @@
-import '../Footer.css';
 
 const Footer = () => {
   return (
 
+    <section>
+    <section class="center">
+
+    <p>&copy; By Zechariah</p>
+    
+        <button id="btn-attributions">Show attributions</button>    
+    </section>
 
     <footer id="attributions" class="hide">
    
@@ -24,6 +30,7 @@ const Footer = () => {
   <a href="https://commons.wikimedia.org/wiki/File:Cherry_pie_with_ice_cream.jpg">stu_spivack</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a>, via Wikimedia Commons
   <a href="https://commons.wikimedia.org/wiki/File:Banana_and_chocolate_oatmeal_cookies_02.jpg">Ytha67</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons
 </footer>
+</section>
   );
 }
 
