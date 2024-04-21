@@ -5,7 +5,7 @@ const dawnDrinks = (menuItem) => {
   if (menuItem.menu == "dawn") {
     if(menuItem.type == "Drink" && menuItem.feature == true){
       return (    
-        
+        <section>
       <table className="two top drinks">
         <tr>
           <th>Drink of The Week</th>
@@ -36,11 +36,14 @@ const dawnDrinks = (menuItem) => {
                 </td>
             </tr>
           </table>
+
+              </section>
    
     )}
     if(menuItem.type == "Drink" && menuItem.feature == false){
       return (    
-      
+        <section>
+
           <table className="two top drinks">
             <tr>
               <th>Beverage Menu</th>
@@ -71,7 +74,9 @@ const dawnDrinks = (menuItem) => {
                   </td>
                   </tr>
                   </table>
-               
+                             <img src="images/sun.png"></img>
+                             </section>
+
                 
     )}
 
