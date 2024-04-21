@@ -54,7 +54,6 @@ const RoomRental = () => {
         </div>
     </section>
     <Footer />
-    <script src="script.js"></script>
 
   </section>
 

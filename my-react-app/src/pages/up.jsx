@@ -40,8 +40,7 @@ const Dawn = () => {
         />
       ))}
           <Footer />
-    <script src="script.js"></script>
-    <script src="dayScript.js"></script>
+
 
     </div>
   );

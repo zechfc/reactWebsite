@@ -18,68 +18,6 @@ const showHideNav = () => {
 
 };
 
-const slideForwardFood = () => {
-    //at the end of the list of images
-    if(getCurrentImageFood().nextElementSibling == null)
-    {
-        slideFood(document.querySelector("#preview img"));
-    }
-    else
-    {
-        slideFood(getCurrentImageFood().nextElementSibling);
-    }
-};
-
-const slideBackwardFood = () => {
-    if(getCurrentImageFood().previousElementSibling == null)
-    {
-        slideFood(document.querySelector("#preview :last-child"));
-    }
-    else
-    {
-        slideFood(getCurrentImageFood().previousElementSibling);
-    }};
-
-const slideForwardDrink = () => {
-    //at the end of the list of images
-    if(getCurrentImageDrink().nextElementSibling == null)
-    {
-        slideDrink(document.querySelector("#preview img"));
-    }
-    else
-    {
-        slideDrink(getCurrentImageDrink().nextElementSibling);
-    }
-};
-
-const slideBackwardDrink = () => {
-    if(getCurrentImageFood().previousElementSibling == null)
-    {
-        slideDrink(document.querySelector("#preview :last-child"));
-    }
-    else
-    {
-        slideDrink(getCurrentImageFood().previousElementSibling);
-    }};    
-
-const slideDrink = (nextImage) => {
-    getCurrentImage().classList.add("hide");
-    nextImage.classList.remove("hide");
-};
-
-const slideFood = (nextImage) => {
-    getCurrentImage().classList.add("hide");
-    nextImage.classList.remove("hide");
-};
-
-
-const getCurrentImageDrink = () => {
-    return document.querySelector("#preview :not(.hide)")
-};
-
-const getCurrentImageFood = () => {
-    return document.querySelector("#preview :not(.hide)")
-};
 
 const signin = () =>{
     const root = document.querySelector(":root");
@@ -127,16 +65,7 @@ const attributions = (e) => {
     
 };
 
-const putmedown = () => {
 
-    window.location.href="down.html";
-  
-};
-
-const pickmeup = () => {
-    window.location.href="up.html";
-  
-};
 //https://api.openbrewerydb.org/breweries
 
 
@@ -210,16 +139,7 @@ const submitForm = (e) => {
     list.append(ing6li);
 
     
-    // let i=1;
-    // let ingredients= "ing"+1+"li";
-   // console.log(ingredients);
-   
-    // while(ingredients != null)
-    // {
-    //     list.append(ingredients);
-    //     i++
 
-    // }
 
     Container.append(list);
     result.innerHTML = "Form successfully sent";
@@ -255,7 +175,17 @@ document.querySelector(".side-panel-toggle").addEventListener("click", () => {
 
   });
 
-
+  const putmedown = () => {
+    console.log("good");
+    <Link to="/down"></Link>;
+    };
+    
+    const pickmeup = () => {
+        console.log("good");
+    
+    <Link to="/up"></Link>  
+      
+    };
 
 document.getElementById("signin").onclick = signin;
 //document.getElementById("cart-btn").onclick = cart;

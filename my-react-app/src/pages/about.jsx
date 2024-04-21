@@ -92,7 +92,6 @@ const About = () => {
         </div>
 
         <Footer />
-    <script src="script.js"></script>
 
         
   </section>

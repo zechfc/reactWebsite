@@ -13,7 +13,6 @@ const Layout  = () => {
     <Content />
     
     <Footer />
-    <script src="script.js"></script>
 
     </div>
     
