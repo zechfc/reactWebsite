@@ -1,5 +1,27 @@
 
 const Footer = () => {
+  const attributions = (event) => {
+
+    const countP = document.getElementById("count-p");
+
+    if (event.target.innerHTML.toLowerCase() == "show attributions"){
+        console.log("test");
+        event.target.innerHTML="hide attributions";
+        document.getElementById("attributions").classList.toggle("hide");
+
+
+        
+    }
+    else{
+      event.target.innerHTML = "hide attributions";
+        console.log("test");
+        event.target.innerHTML="show attributions";
+        document.getElementById("attributions").classList.add("hide");
+    }
+    
+};
+
+ 
   return (
 
     <section>
@@ -7,7 +29,7 @@ const Footer = () => {
 
     <p>&copy; By Zechariah</p>
     
-        <button id="btn-attributions">Show attributions</button>    
+        <button onClick={attributions} id="btn-attributions">Show attributions</button>    
     </section>
 
     <footer id="attributions" class="hide">

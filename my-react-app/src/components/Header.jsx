@@ -1,6 +1,39 @@
 import { Outlet, Link } from "react-router-dom";
 
 const Header = () => {
+
+    const showHideNav = () => {
+        const root = document.querySelector(":root");
+            //root.style.setProperty("--ball-color", color); changes all the circles color
+        if(document.getElementById("nav-items").classList.toggle("hide-small"))
+            {
+                root.style.setProperty("--top1", "500px");
+                root.style.setProperty("--top2", "800px");
+            }
+        else
+        {
+          
+                root.style.setProperty("--top1", "800px");
+                root.style.setProperty("--top2", "900px");
+        }
+       
+    
+    
+    
+    };
+    
+    
+    
+      
+    
+    const toggleMenu = () => {
+            const mainNav= document.getElementById("main-nav");
+            mainNav.classList.toggle("show-menu");
+        };
+    
+    
+
+    
   return (
   <header>
      <div id="heading" class="columns ">
@@ -27,7 +60,7 @@ const Header = () => {
 
        <nav id="main-nav">
 
-        <div id="hamburger">
+        <div onclick = {showHideNav} id="hamburger">
             <div></div>
             <div></div>
             <div></div>
