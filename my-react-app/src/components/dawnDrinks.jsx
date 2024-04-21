@@ -29,9 +29,9 @@ const dawnDrinks = (menuItem) => {
                   </ul>
                 <h3>Price</h3>
                   <div className="bullets">
-                    <p><strong></strong></p>
-                    <p><strong></strong> </p>
-                    <p><strong></strong></p>
+                    <p> <strong>Large </strong>{menuItem.prices[0]}</p>
+                    <p> <strong>Medium </strong> {menuItem.prices[1]}</p>
+                    <p><strong>Small </strong>{menuItem.prices[2]}</p>
                   </div>
                 </td>
             </tr>

@@ -34,7 +34,7 @@ const Dawn = () => {
           <DayForm />
           <div id="dawnmenu" class="columns Menu">
 
-          <div className="two">
+          <div className="two foodContainer"  id="drinkCont">
 
           {menuItems.map((menuItem) => (
         <DawnDrink
@@ -55,7 +55,7 @@ const Dawn = () => {
       ))}
         </div>
 
-      <div className="columns">
+      <div className="three">
       <LogoDawn />
 
       </div>

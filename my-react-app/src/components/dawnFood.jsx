@@ -4,7 +4,7 @@ const dawnFood = (menuItem) => {
 
     if(menuItem.type == "Food"){
       return (    
-        <section>
+        <div>
       <table className="top food">
         <tr>
           <th>Food of The Week</th>
@@ -21,23 +21,23 @@ const dawnFood = (menuItem) => {
                 <p>{menuItem.description}</p>
                 <h3>Ingredients</h3>
                 <ul>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
+                <li>{menuItem.ingredients[0]}</li>
+                  <li>{menuItem.ingredients[1]}</li>
+                  <li>{menuItem.ingredients[2]}</li>
+                  <li>{menuItem.ingredients[3]}</li>
                   </ul>
                 <h3>Price</h3>
                   <div className="bullets">
-                    <p><strong></strong></p>
-                    <p><strong></strong> </p>
-                    <p><strong></strong></p>
+                  <p> <strong>{menuItem.amt[0]} Serving Size</strong>{menuItem.prices[0]}</p>
+                    <p> <strong>{menuItem.amt[1]} Serving Size</strong> {menuItem.prices[1]}</p>
+                    <p><strong>{menuItem.amt[2]} Serving Size</strong>{menuItem.prices[2]}</p>
                   </div>
                 </td>
             </tr>
           </table>
    
                
-                  </section>
+                  </div>
     )} 
    
 
