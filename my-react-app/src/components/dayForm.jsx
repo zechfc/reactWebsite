@@ -112,9 +112,7 @@ const MenuItem = (menuItem) => {
 
     
     return (
-        
-      <section >
-       <button onClick={open} id="side-panel-button" class="side-panel-toggle" type="button"> Recommend A Day Menu Item</button>
+
                     <div id="side" class="side-panel">
                       <form id="menuItems">
                           <p>
@@ -192,7 +190,6 @@ const MenuItem = (menuItem) => {
 
 
   
-      </section>
     );
   };
 
