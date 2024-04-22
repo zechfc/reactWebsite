@@ -26,6 +26,7 @@ const Content = () => {
                             <button id="btn-day">Pick Me Up!</button>    
                             </Link> 
 
+
                             </div>
                             
                     </div>
