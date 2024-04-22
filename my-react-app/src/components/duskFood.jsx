@@ -1,13 +1,13 @@
 
-const dawnDrinks = (menuItem) => {
+const duskFood = (menuItem) => {
+    if (menuItem.menu == "dusk") {
 
-  if (menuItem.menu == "dawn") {
-    if(menuItem.type == "Drink" ){
+    if(menuItem.type == "Food"){
       return (    
-        <section>
-      <table className="two top drinks">
+        <div>
+      <table className="top food">
         <tr>
-          <th>Drink of The Week</th>
+          <th>Food of The Week</th>
           <th>{menuItem.name}</th>
           </tr>
           <tr>
@@ -21,31 +21,27 @@ const dawnDrinks = (menuItem) => {
                 <p>{menuItem.description}</p>
                 <h3>Ingredients</h3>
                 <ul>
-                  <li>{menuItem.ingredients[0]}</li>
+                <li>{menuItem.ingredients[0]}</li>
                   <li>{menuItem.ingredients[1]}</li>
                   <li>{menuItem.ingredients[2]}</li>
                   <li>{menuItem.ingredients[3]}</li>
                   </ul>
                 <h3>Price</h3>
                   <div className="bullets">
-                    <p> <strong>Large </strong>{menuItem.prices[0]}</p>
-                    <p> <strong>Medium </strong> {menuItem.prices[1]}</p>
-                    <p><strong>Small </strong>{menuItem.prices[2]}</p>
+                  <p> <strong>{menuItem.amt[0]} Serving Size</strong>{menuItem.prices[0]}</p>
+                    <p> <strong>{menuItem.amt[1]} Serving Size</strong> {menuItem.prices[1]}</p>
+                    <p><strong>{menuItem.amt[2]} Serving Size</strong>{menuItem.prices[2]}</p>
                   </div>
                 </td>
             </tr>
           </table>
-
-      
-                             </section>
-
-                
-    )}
-
-
+   
+               
+                  </div>
+    )} 
    
 
   }
 };
 
-export default dawnDrinks;
+export default duskFood;

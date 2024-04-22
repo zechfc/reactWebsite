@@ -1,7 +1,7 @@
 
-const dawnDrinks = (menuItem) => {
+const duskDrinks = (menuItem) => {
 
-  if (menuItem.menu == "dawn") {
+  if (menuItem.menu == "dusk") {
     if(menuItem.type == "Drink" ){
       return (    
         <section>
@@ -48,4 +48,4 @@ const dawnDrinks = (menuItem) => {
   }
 };
 
-export default dawnDrinks;
+export default duskDrinks;
